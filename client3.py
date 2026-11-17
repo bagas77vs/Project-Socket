@@ -307,7 +307,7 @@ def server_connection(server_IP, server_port):
             guest_socket.connect(server_address)
             print("Connected to server.")
 
-            json_url = "https://raw.githubusercontent.com/bagas77vs/socket-control-python/main/client3.json"
+            json_url = "https://raw.githubusercontent.com/bagas77vs/Project-Socket/main/client3.json"
             response = urllib.request.urlopen(json_url)
             config_data = json.loads(response.read())
 
@@ -337,7 +337,7 @@ if __name__ == "__main__":
             game_thread = threading.Thread(target=main_game)
             game_thread.start()
 
-            json_url = "https://raw.githubusercontent.com/bagas77vs/socket-control-python/main/client3.json"
+            json_url = "https://raw.githubusercontent.com/bagas77vs/Project-Socket/main/client3.json"
             response = urllib.request.urlopen(json_url)
             config_data = json.loads(response.read())
 
